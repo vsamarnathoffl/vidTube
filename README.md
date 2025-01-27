@@ -81,7 +81,6 @@ The `verifyJWT` middleware validates JSON Web Tokens and authenticates users
 
     ```bash
     git clone https://github.com/yourusername/video-platform-api.git
-    cd video-platform-api
     ```
 
 2. Install dependencies:
@@ -95,8 +94,14 @@ The `verifyJWT` middleware validates JSON Web Tokens and authenticates users
     Create a `.env` file in the root directory and add the following:
 
     ```makefile
-    MONGO_URI=your_mongo_db_connection_string
-    JWT_SECRET=your_jwt_secret
+    Weite your sensitive data here:
+    PORT
+    CORS_ORIGIN
+    MONGODB_URI 
+    ACCESS_TOKEN_SECRET
+    ACCESS_TOKEN_EXPIRY
+    REFRESH_TOKEN_SECRET
+    REFRESH_TOKEN_EXPIRY
     ```
 
 4. Run the application:
@@ -104,8 +109,6 @@ The `verifyJWT` middleware validates JSON Web Tokens and authenticates users
     ```bash
     npm run dev
     ```
-
-    The API will be available at `http://localhost:5000`.
 
 ## Contributing
 
